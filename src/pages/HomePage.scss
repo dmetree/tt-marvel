@@ -1,0 +1,35 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background: #2a75b3;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f3d403;
+    margin: 0;
+    padding: 2vh;
+    text-shadow: 2px 2px #cc4224;
+    
+    @media screen and (min-width: 768px) {
+        font-size: 4rem;
+    }
+    
+}

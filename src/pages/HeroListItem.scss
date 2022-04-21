@@ -1,0 +1,39 @@
+.general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh;
+    @media screen and (min-width: 1024px) {
+        flex-wrap: wrap;
+    }
+}
+.general__img {
+    width: 70%;
+    border: 3px solid #cc4224;
+    &:hover {
+        transform: scale(1.05);
+        transition: infinite 2s ease-in-out;
+    }
+}
+.general__name {
+    color: #f3d403;
+}
+.general__button {
+    width: 70%;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #f3d403;
+    color:#000;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: #f3d403;
+        background-color:#000;
+    }
+}
